@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _f;
+            },
+            set: function(val) {
+              _f = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              var _fProto = Window.prototype.fetch;
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: function() {
+                  return _f || _fProto;
+                },
+                set: function(val) {
+                  _f = val;
+                },
+                configurable: true,
+                enumerable: true
+              });
+            }
+          } catch (err) {}
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OXN BUILD - Renovasi, Konstruksi, Interior & Perbaikan Rumah</title>
+    <meta name="description" content="Jasa kontraktor renovasi rumah, konstruksi bangunan, desain interior, serta perbaikan ringan seperti instalasi pipa, pompa air, dan sanitasi bergaransi resmi." />
+    <meta property="og:title" content="OXN BUILD - Renovasi, Konstruksi, Interior & Perbaikan Rumah" />
+    <meta property="og:description" content="Jasa kontraktor renovasi rumah, konstruksi bangunan, desain interior, serta perbaikan ringan seperti instalasi pipa, pompa air, dan sanitasi bergaransi resmi." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OXN BUILD - Renovasi, Konstruksi & Interior" />
+    <meta name="twitter:description" content="Jasa kontraktor renovasi rumah, bangun baru, dan interior bergaransi. Hubungi CS WhatsApp 085947342718." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "OXN BUILD",
+      "description": "Jasa kontraktor renovasi, konstruksi bangunan, dan desain interior profesional.",
+      "telephone": "+6285947342718",
+      "slogan": "Build Better. Live Better.",
+      "serviceArea": "Indonesia"
+    }
+    </script>
+  </head>
+  <body class="bg-[#F8F9FA] text-[#1E293B] antialiased selection:bg-[#8DB63F] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

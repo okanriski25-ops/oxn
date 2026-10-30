@@ -1,0 +1,6 @@
+{
+  "name": "OXN BUILD - Renovasi, Konstruksi, Interior & Perbaikan Rumah",
+  "description": "Jasa kontraktor renovasi rumah, konstruksi bangunan, desain interior, serta perbaikan ringan seperti instalasi pipa, pompa air, dan sanitasi bergaransi resmi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
